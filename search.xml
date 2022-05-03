@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search> 
+  
+  
+    
+    <entry>
+      <title>Hexo建站教程</title>
+      <link href="/2022/05/02/hexo-jiaocheng/"/>
+      <url>/2022/05/02/hexo-jiaocheng/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>欢迎来到Hexo建站教程，在这里你可以<del>感受到什么叫悲痛万分与生死离别</del>和我一起来学习建站<br>网站的概念，自己到<a href="https://baike.baidu.com/">百度百科</a>上面搜索。。。。。。<br>我猜现在肯定有人还在这里看，没去搜，现在不要赶进度，快去搜<br>你不会还没有搜索吧，快点去搜！！！不然你听不懂<br>好了，你不搜我也不管你了。。。。。。<br>让我们开始吧！</p><div class="note success flat"><p>PS：本文发于2022年5月2日</p></div><hr><h1 id="开始使用"><a href="#开始使用" class="headerlink" title="开始使用"></a>开始使用</h1><h2 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h2><p>欢迎使用 Hexo，本文档将帮助您快速上手。</p><h3 id="什么是Hexo"><a href="#什么是Hexo" class="headerlink" title="什么是Hexo"></a>什么是Hexo</h3><p>Hexo 是一个快速、简洁且高效的博客框架。Hexo 使用 Markdown（或其他渲染引擎）解析文章，在几秒内，即可利用靓丽的主题生成静态网页。</p><h3 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h3><p>安装 Hexo 只需几分钟时间，若您在安装过程中遇到问题或无法找到解决方式，请点击右下角对话按钮，我会尽力解决您的问题。</p><h4 id="安装前提"><a href="#安装前提" class="headerlink" title="安装前提"></a>安装前提</h4><p>安装 Hexo 相当简单，只需要先安装下列应用程序即可：</p><ul><li>Node.js (Node.js 版本需不低于 10.13，建议使用 Node.js 12.0 及以上版本)</li><li>Git<br>如果您的电脑中已经安装上述必备程序，那么恭喜您！你可以直接前往 安装 Hexo 步骤。</li></ul><p>如果您的电脑中尚未安装所需要的程序，请根据以下安装指示完成安装。</p><h5 id="安装-Git"><a href="#安装-Git" class="headerlink" title="安装 Git"></a>安装 Git</h5><ul><li>Windows：下载并安装<a href="http://git-scm.com/">Git</a>.</li><li>Mac：使用 Homebrew, MacPorts 或者下载 安装程序。</li><li>Linux (Ubuntu, Debian)：<code>sudo apt-get install git-core</code></li><li>Linux (Fedora, Red Hat, CentOS)：<code>sudo yum install git-core</code><div class="note danger flat"><p><strong>Mac 用户</strong><br>如果在编译时可能会遇到问题，请先到 App Store 安装 Xcode，Xcode 完成后，启动并进入 Preferences -&gt; Download -&gt; Command Line Tools -&gt; Install 安装命令行工具。</p></div></li></ul><h5 id="安装-Node-js"><a href="#安装-Node-js" class="headerlink" title="安装 Node.js"></a>安装 Node.js</h5><p>Node.js 为大多数平台提供了官方的<a href="https://nodejs.org/zh-cn/download/">安装程序</a>。</p><div class="note info flat"><p>其它的安装方法：</p><ul><li>Windows：通过 nvs（推荐）或者 nvm 安装。</li><li>Mac：使用 Homebrew 或 MacPorts 安装。</li><li>Linux（DEB&#x2F;RPM-based）：从 NodeSource 安装。<br>其它：使用相应的软件包管理器进行安装，可以参考由 Node.js 提供的 指导。<br>对于 Mac 和 Linux 同样建议使用 nvs 或者 nvm，以避免可能会出现的权限问题。</li></ul></div><div class="note warning flat"><p><strong>Windows 用户</strong><br>使用 Node.js 官方安装程序时，请确保<strong>勾选 Add to PATH 选项</strong>（默认已勾选）</p></div><div class="note danger flat"><p><strong>For Mac &#x2F; Linux 用户</strong><br>如果在尝试安装 Hexo 的过程中出现<code>EACCES</code>权限错误，请遵循 由 npmjs 发布的指导 修复该问题。强烈建议<strong>不要</strong>使用<code>root</code>、<code>sudo</code>等方法覆盖权限</p></div><div class="note warning flat"><p><strong>Linux</strong><br>如果您使用 Snap 来安装 Node.js，在 初始化 博客时您可能需要手动在目标文件夹中执行<code>npm install</code>。</p></div><h4 id="安装-Hexo"><a href="#安装-Hexo" class="headerlink" title="安装 Hexo"></a>安装 Hexo</h4><p>所有必备的应用程序安装完成后，即可使用 npm 安装 Hexo。</p><div class="note danger flat"><p>请注意，从现在起，所有的命令&#x2F;代码都是输入在Git Bash上的，建议大家使用VS code上的内置Git Bash打开，Hexo的根目录文件也建议使用VS code打开！！！</p></div><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install -g hexo-cli</span><br></pre></td></tr></table></figure><p><a href="https://dszyblog-pic.vercel.app/hexo%E9%99%90%E5%88%B6%E7%89%88%E6%9C%AC.png">这些是Hexo与Node.js的版本限制</a><br>我墙裂建议你永远安装最新版本的 Hexo</p><h2 id="建站"><a href="#建站" class="headerlink" title="建站"></a>建站</h2><p>安装 Hexo 完成后，请执行下列命令，Hexo 将会在指定文件夹中新建所需要的文件。（注意：如果是在指定文件夹内开启的Git Bash，则不需要执行第一行代码！！！）</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo init &lt;folder&gt;</span><br><span class="line"><span class="built_in">cd</span> &lt;folder&gt;</span><br><span class="line">npm install</span><br></pre></td></tr></table></figure><p>新建完成后，指定文件夹的目录如下：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">.</span><br><span class="line">├── _config.yml</span><br><span class="line">├── package.json</span><br><span class="line">├── scaffolds</span><br><span class="line">├── source</span><br><span class="line">|   ├── _drafts</span><br><span class="line">|   └── _posts</span><br><span class="line">└── themes</span><br></pre></td></tr></table></figure><h3 id="config-yml"><a href="#config-yml" class="headerlink" title="_config.yml"></a>_config.yml</h3><p>网站的【配置】信息，您可以在此配置大部分的参数。</p><h3 id="package-json"><a href="#package-json" class="headerlink" title="package.json"></a>package.json</h3><p>应用程序的信息。EJS, Stylus 和 Markdown renderer 已默认安装，您可以自由移除。</p><figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="punctuation">&#123;</span></span><br><span class="line">  <span class="attr">&quot;name&quot;</span><span class="punctuation">:</span> <span class="string">&quot;hexo-site&quot;</span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">&quot;version&quot;</span><span class="punctuation">:</span> <span class="string">&quot;0.0.0&quot;</span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">&quot;private&quot;</span><span class="punctuation">:</span> <span class="keyword">true</span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">&quot;hexo&quot;</span><span class="punctuation">:</span> <span class="punctuation">&#123;</span></span><br><span class="line">    <span class="attr">&quot;version&quot;</span><span class="punctuation">:</span> <span class="string">&quot;&quot;</span></span><br><span class="line">  <span class="punctuation">&#125;</span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">&quot;dependencies&quot;</span><span class="punctuation">:</span> <span class="punctuation">&#123;</span></span><br><span class="line">    <span class="attr">&quot;hexo&quot;</span><span class="punctuation">:</span> <span class="string">&quot;^3.8.0&quot;</span><span class="punctuation">,</span></span><br><span class="line">    <span class="attr">&quot;hexo-generator-archive&quot;</span><span class="punctuation">:</span> <span class="string">&quot;^0.1.5&quot;</span><span class="punctuation">,</span></span><br><span class="line">    <span class="attr">&quot;hexo-generator-category&quot;</span><span class="punctuation">:</span> <span class="string">&quot;^0.1.3&quot;</span><span class="punctuation">,</span></span><br><span class="line">    <span class="attr">&quot;hexo-generator-index&quot;</span><span class="punctuation">:</span> <span class="string">&quot;^0.2.1&quot;</span><span class="punctuation">,</span></span><br><span class="line">    <span class="attr">&quot;hexo-generator-tag&quot;</span><span class="punctuation">:</span> <span class="string">&quot;^0.2.0&quot;</span><span class="punctuation">,</span></span><br><span class="line">    <span class="attr">&quot;hexo-renderer-ejs&quot;</span><span class="punctuation">:</span> <span class="string">&quot;^0.3.1&quot;</span><span class="punctuation">,</span></span><br><span class="line">    <span class="attr">&quot;hexo-renderer-stylus&quot;</span><span class="punctuation">:</span> <span class="string">&quot;^0.3.3&quot;</span><span class="punctuation">,</span></span><br><span class="line">    <span class="attr">&quot;hexo-renderer-marked&quot;</span><span class="punctuation">:</span> <span class="string">&quot;^0.3.2&quot;</span><span class="punctuation">,</span></span><br><span class="line">    <span class="attr">&quot;hexo-server&quot;</span><span class="punctuation">:</span> <span class="string">&quot;^0.3.3&quot;</span></span><br><span class="line">  <span class="punctuation">&#125;</span></span><br><span class="line"><span class="punctuation">&#125;</span></span><br></pre></td></tr></table></figure><h3 id="scaffolds"><a href="#scaffolds" class="headerlink" title="scaffolds"></a>scaffolds</h3><p>模版 文件夹。当您新建文章时，Hexo 会根据 scaffold 来建立文件。</p><p>Hexo的模板是指在新建的文章文件中默认填充的内容。例如，如果您修改scaffold&#x2F;post.md中的Front-matter内容，那么每次新建一篇文章时都会包含这个修改。</p><h3 id="source"><a href="#source" class="headerlink" title="source"></a>source</h3><p>资源文件夹是存放用户资源的地方。除<code>_posts</code>文件夹之外，开头命名为<code>_</code>(下划线)的文件 &#x2F; 文件夹和隐藏的文件将会被忽略。Markdown 和 HTML 文件会被解析并放到<code>public</code>文件夹，而其他文件会被拷贝过去。</p><h3 id="themes"><a href="#themes" class="headerlink" title="themes"></a>themes</h3><p>主题 文件夹。Hexo 会根据主题来生成静态页面。</p><h2 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h2><p>同志们可以在<code>_config.yml</code>中修改大部分的配置。</p><h3 id="网站"><a href="#网站" class="headerlink" title="网站"></a>网站</h3><table><thead><tr><th align="center">参数</th><th align="center">描述</th></tr></thead><tbody><tr><td align="center">title</td><td align="center">网站标题</td></tr><tr><td align="center">subtitle</td><td align="center">网站副标题</td></tr><tr><td align="center">description</td><td align="center">网站描述</td></tr><tr><td align="center">keywords</td><td align="center">网站的关键词。支持多个关键词。</td></tr><tr><td align="center">author</td><td align="center">您的名字</td></tr><tr><td align="center">language</td><td align="center">网站使用的语言。对于简体中文用户来说，使用不同的主题可能需要设置成不同的值，请参考你的主题的文档自行设置，常见的有 zh-Hans和 zh-CN。</td></tr><tr><td align="center">timezone</td><td align="center">网站时区。Hexo 默认使用您电脑的时区。请参考 时区列表 进行设置，如 America&#x2F;New_York, Japan, 和 UTC 。一般的，对于中国大陆地区可以使用 Asia&#x2F;Shanghai。</td></tr><tr><td align="center">其中，<code>description</code>主要用于SEO，告诉搜索引擎一个关于您站点的简单描述，通常建议在其中包含您网站的关键词。<code>author</code>参数用于主题显示文章的作者。</td><td align="center"></td></tr></tbody></table><h1 id="基本操作"><a href="#基本操作" class="headerlink" title="基本操作"></a>基本操作</h1><h2 id="写作"><a href="#写作" class="headerlink" title="写作"></a>写作</h2><p>用以下命令来生成一篇空白文章：</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo new post 文章名（建议写英文的，不然会解码）</span><br></pre></td></tr></table></figure><h2 id="页面"><a href="#页面" class="headerlink" title="页面"></a>页面</h2><p>用以下命令来生成一个空白页面：</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo new page 页面名（必须是英文，后面我会说怎么回事）</span><br></pre></td></tr></table></figure><h2 id="生成静态文件"><a href="#生成静态文件" class="headerlink" title="生成静态文件"></a>生成静态文件</h2><div class="note info flat"><p>每次对网站进行修改后或增加文章后都需要执行！！！</p></div><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo g</span><br></pre></td></tr></table></figure><p>你也可以让网站生成静态文件后自动部署（后面会讲啥是部署）</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo g -d</span><br></pre></td></tr></table></figure><p>或者是（这俩命令作用相同。。。。。。）</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo d -g</span><br></pre></td></tr></table></figure><h1 id="部署"><a href="#部署" class="headerlink" title="部署"></a>部署</h1><p>我们现在建好了网站，需要把他部署到服务器上，这里我建议使用：</p><ul><li>Gitee（首选）← ← ←作者首站</li><li>Vercel（备选）</li><li>Github（备选）<br>（作者是直接把三个都部署了，不过，不建议普通人部署那么多。。。。。。）<h2 id="部署到Git类（Gitee、Github）"><a href="#部署到Git类（Gitee、Github）" class="headerlink" title="部署到Git类（Gitee、Github）"></a>部署到Git类（Gitee、Github）</h2></li></ul><p>1.先安装 hexo-deployer-git。</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure><p>2.在 _config.yml末尾的deploy中（如果有已存在的请删除）添加如下配置：</p><figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">deploy:</span></span><br><span class="line">  <span class="attr">type:</span> <span class="string">git</span></span><br><span class="line">  <span class="attr">repo:</span> </span><br><span class="line">  <span class="attr">branch:</span> </span><br></pre></td></tr></table></figure><p>repo一栏请填写仓库地址，比如：<code>https://github.com/dszyblog/dszyblog.github.io</code>这个是以GitHub为例子，建议大家使用Gitee，仓库地址就是浏览器访问的那个网址！！！<br>branch一栏，如果你用的是GitHub，请输入<code>main</code>，如果是Gitee，请输入<code>master</code><br>一切修改完，就可以输入<code>hexo g -d</code>来生成静态文件+部署了</p><div class="note warning flat"><p>PS：如果你使用的是Gitee，需要先新建一个和你的用户名一模一样的仓库（不是昵称），然后点击【服务】，点击【Gitee Page】，实名认证后点击部署即可。<strong>Gitee有个比较麻烦的地方就是需要每次部署后点击更新，请永远记住这句话</strong></p></div><div class="note info flat"><p>PS：如果你用的是GitHub，那么新建仓库，请将仓库名修改成<code>用户名.github.io</code>就会自动启用GitHub pages 服务，最后的网站网址（域名）和仓库名相同。<strong>GitHub不需要像Gitee一样手动部署</strong></p></div><h1 id="主题"><a href="#主题" class="headerlink" title="主题"></a>主题</h1><p>好了，恭喜你已经完成%95了，剩下的%5给我们的网站换上衣服（主题）了，Hexo默认的主题不是特别的好看，在这里我给大家推荐几个主题：</p><ul><li><a href="https://butterfly.js.org/">Butterfly</a> ← ← ←作者使用</li><li><a href="https://theme-next.js.org/">NexT</a></li><li><a href="https://raytaylorlin.github.io/">Raytaylorism</a></li><li><a href="https://liuyib.github.io/">stun</a><br>更多主题请前往<a href="https://hexo.io/themes/">Hexo博客主题</a></li></ul><h1 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h1><p>恭喜你，你已经有了一个自己的网站，现在，就去好好炫耀+享受吧<br>如果你需要让我把你的网站当作右上角的【友链】的话，请在留言板或评论区留言<br>好了，我是端水自由，我们<del>再也不见</del>下期再见！</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 教程 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Hexo </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Python【02.1】---编程前的准备（macOS篇）</title>
+      <link href="/2022/04/22/python02-2/"/>
+      <url>/2022/04/22/python02-2/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>由于端水自由没有macOS的电脑，所以大家可以自己在知乎上面搜索教程，散会~</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 三步学习Python编程 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> python </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>关于人与人之间的信任总结（纯属搞怪）</title>
+      <link href="/2022/04/18/people-and-people/"/>
+      <url>/2022/04/18/people-and-people/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><blockquote><p>本期同学作者：嘉俪<br>黄框子里的字为端水自由的点评！</p></blockquote><hr><h1 id="关于人与人之间的信任总结"><a href="#关于人与人之间的信任总结" class="headerlink" title="关于人与人之间的信任总结"></a>关于人与人之间的信任总结</h1><h2 id="探索人类的奥秘"><a href="#探索人类的奥秘" class="headerlink" title="探索人类的奥秘"></a>探索人类的奥秘</h2><h3 id="–来自“大北”的杨嘉俪“教授”"><a href="#–来自“大北”的杨嘉俪“教授”" class="headerlink" title="–来自“大北”的杨嘉俪“教授”"></a>–来自“大北”的杨嘉俪“教授”</h3><h1 id="在这之前我们先来做一道数学题："><a href="#在这之前我们先来做一道数学题：" class="headerlink" title="在这之前我们先来做一道数学题："></a>在这之前我们先来做一道数学题：</h1><p>小明和小红一起去太空旅游，他们的飞船行驶速度不统一。</p><div class="note warning flat"><p>停！小明和小红为什么会去太空旅游？？？</p></div><p>那么问：<br>世界上有没有奥特曼？天花板有几个大姐做的煎饼？</p><div class="note warning flat"><p>这问题和题目有什么问题？</p></div><p>首先我们要知道我们的条件：我们知道了<br>来是come去是go点头yes摇头no</p><div class="note warning flat"><p>你从哪里知道的！</p></div><p>还知道了<br>《星空》是达芬奇画的<br>并且知道了<br>秦朝的历史演变<br>和<br>浮力的概念与意义<br>由此可以明白<br>《打起手鼓唱起歌》是一首新疆歌曲</p><div class="note warning flat"><p>啊这。。。。。。</p></div><h1 id="所以解题过程如下："><a href="#所以解题过程如下：" class="headerlink" title="所以解题过程如下："></a>所以解题过程如下：</h1><p>因为：<br>《西游记》的师徒八人在打怪过程中唱出了一首<em>苏联歌曲</em>被妖怪发现，幸好被蜡笔小新及时救下，才逃得一劫。</p><div class="note warning flat"><p>《关于西游记有师徒八人而且他们还会唱<em>苏联歌曲</em>并且被蜡笔小新救下的这件事》</p></div><p>所以<br>我们只需要告上法庭申请二诉，敌人哪吒便无计可施。</p><div class="note warning flat"><p>哪吒：我犯了什么错！！！！！！！！！！！！</p></div><p><strong>这道简单的题便能够解出来了</strong><br>答：奶奶跳远跳过了2米3；树上有1998片叶子。</p><div class="note warning flat"><p>《牛   头   不   对   马   嘴》</p></div><h1 id="学以致用"><a href="#学以致用" class="headerlink" title="学以致用"></a>学以致用</h1><p>有人用两杯水倒入了游泳池中，那么请问：<br>马身上有几只跳蚤？世界上有几只超级蚂蚁?</p><div class="note warning flat"><p>无数只；没有</p></div><h1 id="作答板块"><a href="#作答板块" class="headerlink" title="作答板块"></a>作答板块</h1><p>请作答：</p><div class="note warning flat"><p>想对<strong>同学嘉俪</strong>说的话：<br>写的挺好的，下次不许再写了！！！</p></div><h1 id="感谢收“听”"><a href="#感谢收“听”" class="headerlink" title="感谢收“听”"></a>感谢收“听”</h1><p>再见！</p><div class="note warning flat"><p>再也不见！！！！哈哈哈哈嗝！</p></div>]]></content>
+      
+      
+      <categories>
+          
+          <category> 同学们的搞笑事 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 同学投稿 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>七款最佳浏览器同台对比---PC篇</title>
+      <link href="/2022/04/16/best-broswer-PC/"/>
+      <url>/2022/04/16/best-broswer-PC/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>寻找更好的浏览器？我将 Firefox 与 Chrome、Edge、Safari、Opera、Brave 和 Internet Explorer 进行比较，以便助你作出选择。</p><hr><blockquote><p>Edge yyds!!!作者本人用Edge~</p></blockquote><p>一款出色的浏览器应具备：您必需的功能、跨设备的可用性，及您应得的隐私。</p><p>浏览器是您通往互联网的入口，因此速度、安全性、隐私和实用性至关重要。近年来，Google Chrome 成为很多人的首选浏览器。但在网络广告似已无处不在、数据外泄事件登上头条屡见不鲜的今天，越来越多的人开始寻求浏览器提供更多隐私和尊重。</p><p>那么，您的浏览器是最好的网页浏览器吗？合适的浏览器可以极大改善您的网络体验。因此，闲话少叙，让我们来比较一下 Google Chrome、Firefox、Safari、Opera、Brave、Microsoft Internet Explorer 和 Edge，看看哪款最符合您的需求。</p><h1 id="1-安全性与隐私"><a href="#1-安全性与隐私" class="headerlink" title="1.安全性与隐私"></a>1.安全性与隐私</h1><h2 id="哪款浏览器最能保护您的信息安全？"><a href="#哪款浏览器最能保护您的信息安全？" class="headerlink" title="哪款浏览器最能保护您的信息安全？"></a>哪款浏览器最能保护您的信息安全？</h2><p><img src="https://s3.bmp.ovh/imgs/2022/04/16/ba6e7428e3d02c7c.png"></p><p>期望日常上网工具提供高水平的数据和隐私保护相当正常。至少，浏览器应该提供可以清除浏览历史和搜索记录的“隐私浏览模式”，这样同一台计算机上的其他用户才无法获知您的网上活动。在此方面，所有六款在此比较的浏览器都得到分数。</p><blockquote><p>无论您在网上做了何事，其他任何人都无权使用这些活动数据获利。</p></blockquote><p>浏览器应该提供的另一个功能是，即使普通浏览模式下，也能够阻止网站和各个公司跟踪您的浏览和购物数据。</p><p>浏览器能够阻止第三方跟踪器不仅对隐私很重要 — 通常也意味着可以运行得更快。大多数跟踪器只是一些网站后台运行的脚本。您看不到它们，但可以感觉到它们拖慢了浏览器的速度。从 Firefox 67 版本开始，数字指纹跟踪程序和加密货币挖矿程序也会被拦截。如果你不熟悉“挖矿”，这里有一个案例可以说明它们是如何影响您的：也许您经历过计算机突然升温变卡，或者电量消耗得比平时更快。这往往是“矿工”在您的设备上肆虐的“杰作”。</p><h1 id="2-实用性"><a href="#2-实用性" class="headerlink" title="2.实用性"></a>2.实用性</h1><h2 id="您的浏览器最近帮您做了什么？"><a href="#您的浏览器最近帮您做了什么？" class="headerlink" title="您的浏览器最近帮您做了什么？"></a>您的浏览器最近帮您做了什么？</h2><p><img src="https://s3.bmp.ovh/imgs/2022/04/16/19e4a7285a8310ec.png"></p><p>浏览器除了在后台保护隐私之外，另一出色浏览器的关键要素是实际的用户界面与功能。在标签页浏览、书签管理、自动填写、拼写检查、主题扩展等方面，七款浏览器可谓旗鼓相当。Firefox、Edge 及 Opera 还提供方便快速的屏幕截图功能，当您切换到没有此功能的浏览器时肯定会感到不惯。</p><h1 id="3-跨平台性"><a href="#3-跨平台性" class="headerlink" title="3.跨平台性"></a>3.跨平台性</h1><h2 id="您的浏览器是否可在各平台不同设备上使用？"><a href="#您的浏览器是否可在各平台不同设备上使用？" class="headerlink" title="您的浏览器是否可在各平台不同设备上使用？"></a>您的浏览器是否可在各平台不同设备上使用？</h2><p><img src="https://s3.bmp.ovh/imgs/2022/04/16/d0d733c1463c064c.png"></p><p>首先要指出的是，并非所有浏览器都能在所有操作系统运行。尽管 Firefox、Chrome、Edge、Brave 及 Opera 能在各主要操作系统运行，且很容易安装，但 Internet Explorer 和 Safari 仅能运行于 Microsoft 或 Apple 各自的系统中。Apple 移动设备预装移动版 Safari，而大多数 Android 设备都预装其制造商的定制版浏览器。Firefox、Chrome、Brave、Edge 和 Opera 均可以轻松安装，甚至可以同时使用。</p><p>参与比较的几乎所有浏览器都支持在桌面版与移动版之间进行同步。只要拥有账户，并在所有设备上的浏览器登录即可同步密码、浏览历史、书签、设置等数据。</p><h1 id="4-结论"><a href="#4-结论" class="headerlink" title="4.结论"></a>4.结论</h1><h2 id="最终获胜者是……"><a href="#最终获胜者是……" class="headerlink" title="最终获胜者是……"></a>最终获胜者是……</h2><p>基于我所述的标准 — 隐私、实用和跨平台 — 只有2个浏览器符合该标准，那就是 Microsoft Edge和Firefox。其实真正的不同并非功能，而是隐私。Microsoft Edge和Firefox是最私密的浏览器，它不会将你禁锢在某个生态系统中。在任何操作系统、所有设备上使用Microsoft Edge和Firefox，安全可依赖。</p><p>自 Chrome 推出并占领市场份额以来，各个浏览器已经取得了长足的进步。大多数现代浏览器已经缩小了在跨平台和功能方面的差距，在一些方面，如速度和隐私，实际上已经超过了 Chrome。不过，决定哪款浏览器适合您，最终将取决于您的个人需求和网络浏览最看重的体验取向。</p><p>作者使用的是：Microsoft Edge</p><div class="note info flat"><p>本次参与比较的浏览器均为默认设置，各发行版本如下：<br>Firefox (81) | Chrome (85) | Edge (85) | Safari (14) | Opera (67) | Internet Explorer (11) | Brave (1.14.81)</p></div>]]></content>
+      
+      
+      <categories>
+          
+          <category> 软件 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 浏览器 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>春天的落叶</title>
+      <link href="/2022/04/16/friends01/"/>
+      <url>/2022/04/16/friends01/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><blockquote><p>本期朋友作者：梭哈</p></blockquote><h1 id="春天的落叶"><a href="#春天的落叶" class="headerlink" title="春天的落叶"></a>春天的落叶</h1><p>秋天才有落叶吗？<br>正是一年生机勃勃之时，走入林荫小道，一枚润泽的绿叶悄然落在肩上，我仔细端详那片绿叶，发现并非营养不良，与其他莹莹润润的叶子没有不同之处，那是什么原因使然，叶子掉落？<br>是不是因为树叶间的竞争<br>是不是因为刮起一阵“妖”风<br>是不是因为承担不了身上水珠的重量<br>是不是因为一场春雨打湿了枝桠处<br>是不是因为有鸟儿的嬉戏<br>……<br>树叶哗啦啦地落，我的思绪伴随林荫道上铺满的春天的落叶延续远方。</p><div class="note success flat"><p>PS：发文已经过朋友梭哈本人同意~（不然谁敢发【手动狗头】）</p></div>]]></content>
+      
+      
+      <categories>
+          
+          <category> 朋友们的搞笑事 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 朋友投稿 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>疫情在家</title>
+      <link href="/2022/04/15/classmate02/"/>
+      <url>/2022/04/15/classmate02/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><blockquote><p>本期同学作者：嘉俪</p></blockquote><p>面对“老对手”新型冠状病毒，在家里呆的都要长草了。无聊到爆炸。我唯一的乐子只能从相机里找了。虽然在家里不能出门，但是我个人认为拍照是最好的消遣方式了。“没办法～好可怕～疫情在家不像话～”核酸检测填写表格已经可以做到全文背诵，哈哈哈哈哈哈(&#x2F;≧▽≦)&#x2F;。不知道大家在家能干些啥呢？</p><p><img src="https://s1.ax1x.com/2022/04/15/LGssiV.jpg"><br><img src="https://s1.ax1x.com/2022/04/15/LGsDI0.jpg"><br><img src="https://s1.ax1x.com/2022/04/15/LGsyGT.jpg"><br><img src="https://s1.ax1x.com/2022/04/15/LGs6RU.jpg"></p><div class="note success flat"><p>PS：发文已经过同学”嘉俪“本人同意~（不然谁敢发【手动狗头】）</p></div>]]></content>
+      
+      
+      <categories>
+          
+          <category> 同学们的搞笑事 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 同学投稿 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Python【02.1】---编程前的准备（Windows篇）</title>
+      <link href="/2022/04/15/python02-1/"/>
+      <url>/2022/04/15/python02-1/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>上一章呢，我们介绍了Python的简介与<del>复制粘贴</del>引用廖雪峰的一些话，那么这一节课，我们就来继续讲Python【02】吧！</p><div class="note info flat"><p>俗话说：磨刀后再砍树会更好，所以，现在我们就开始介绍下载<del>崽</del>安装吧~</p></div><hr><h1 id="2-1-安装Python"><a href="#2-1-安装Python" class="headerlink" title="2.1 安装Python"></a>2.1 安装Python</h1><div class="note default flat"><p>预习：Python的运行环境</p></div><p>在开始学习Python之前，我们也需要安装Python的运行环境（也称为运行引擎）。Python有官方提供的安装包，也有许多其它的第三方安装包（也称为Python发行版），本教程将会使用官方安装包进行安装与演示</p><hr><div class="note success flat"><p>体验：在Windows环境下安装</p></div><h2 id="2-1-1-Windows版本"><a href="#2-1-1-Windows版本" class="headerlink" title="2.1.1 Windows版本"></a>2.1.1 Windows版本</h2><h3 id="1，进入下载页面并下载安装包"><a href="#1，进入下载页面并下载安装包" class="headerlink" title="1，进入下载页面并下载安装包"></a>1，进入下载页面并下载安装包</h3><p>在浏览器打开<a href="https://www.python.org/">Python官方网站</a>，进入<a href="https://www.python.org/downloads/">Download页面</a>。点击”Download“按钮即可下载。<br>本期将使用64位版本的Python安装包做演示与讲解</p><div class="note info flat"><p>PS：如果你无法访问Python的官网，可以使用端水自由的蓝奏云链接（但是我不能保证我是最新版本，因为Python时时刻刻都在变化。。。。。。）：<br><a href="https://dszy.lanzoum.com/ijxVn039bzwb">https://dszy.lanzoum.com/ijxVn039bzwb</a><br>密码:fqer<br>（版本为3.10.4的64位版本，32位不可以）</p></div><div class="note warning flat"><p>注意：如果你的电脑是32位的，那么请下载Python官网的x86版本，因为86位&#x3D;32位</p></div><h3 id="2，启动安装包"><a href="#2，启动安装包" class="headerlink" title="2，启动安装包"></a>2，启动安装包</h3><p>下载完成后，双击打开Python的安装包</p><h3 id="3，运行安装包"><a href="#3，运行安装包" class="headerlink" title="3，运行安装包"></a>3，运行安装包</h3><p>如果出现安全警告界面，则单机”运行“继续安装<br>当界面上显示”Install Python 版本号 位数“时，先勾选下方的两个勾（一般来说，第一个会默认勾上，不过请务必勾上第二个”ADD PYTHON 3.XXX TO PATH“）再点击Install Now即可安装</p><div class="note warning flat"><p>注意：不是右下角的”Cancel“，那个是取消安装！！！</p></div><h3 id="4，结束安装"><a href="#4，结束安装" class="headerlink" title="4，结束安装"></a>4，结束安装</h3><p>当安装包界面出现如图片所示时，就代表安装完成啦！<br><img src="https://s1.ax1x.com/2022/04/15/LGsdqs.png" alt="SM.MS的图床经常容易抽风，所以这次我们换一个，可能有点慢，别介意"></p><h3 id="5，运行Powershell（如果你是Windows10以下的版本，请使用cmd）"><a href="#5，运行Powershell（如果你是Windows10以下的版本，请使用cmd）" class="headerlink" title="5，运行Powershell（如果你是Windows10以下的版本，请使用cmd）"></a>5，运行Powershell（如果你是Windows10以下的版本，请使用cmd）</h3><p>按住”Windows“+”R“键，调出运行框，输入：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">powershell</span><br></pre></td></tr></table></figure><p>回车打开Powershell即可<br>对于Windows10以下的用户来说，则须使用cmd（但我还是建议你升级到Windows10，不过现在不要到度娘上去查）</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cmd</span><br></pre></td></tr></table></figure><h3 id="6，确认版本号"><a href="#6，确认版本号" class="headerlink" title="6，确认版本号"></a>6，确认版本号</h3><p>在Powershell（或cmd）运行后，输入<code>python</code>（全部小写的）并按下回车键，如果出现：</p><figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Python <span class="number">3.10</span>.<span class="number">4</span> (tags/v3.<span class="number">10.4</span>:<span class="number">9</span>d38120, Mar <span class="number">23</span> <span class="number">2022</span>, <span class="number">23</span>:<span class="number">13</span>:<span class="number">41</span>) [<span class="type">MSC</span> <span class="type">v.1929</span> <span class="number">64</span> <span class="type">bit</span> (<span class="type">AMD64</span>)] on win32</span><br><span class="line"><span class="built_in">Type</span> <span class="string">&quot;help&quot;</span>, <span class="string">&quot;copyright&quot;</span>, <span class="string">&quot;credits&quot;</span> or <span class="string">&quot;license&quot;</span> <span class="keyword">for</span> more information.</span><br><span class="line">&gt;&gt;&gt;</span><br></pre></td></tr></table></figure><p>那就说明，Python已经安装成功啦！！！</p><h3 id="7，退出Python交互模式"><a href="#7，退出Python交互模式" class="headerlink" title="7，退出Python交互模式"></a>7，退出Python交互模式</h3><div class="note primary flat"><p>请记住，只要是在终端窗口运行的，都是交互模式</p></div><p>方法一：在Python交互界面的<code>&gt;&gt;&gt;</code>后面，按下键盘上的”Ctrl“+”Z“，让后再按下回车即可退出<br>方法二：在Python交互界面的<code>&gt;&gt;&gt;</code>后面，输入<code>exit()</code>，让后再按下回车即可退出（注意exit()一定要有括号，而且还是英文状态下的！！！）</p><blockquote><p>关于Python的交互模式，我会在后面慢慢讲解。。。。。。</p></blockquote><hr><h1 id="小贴士：关于PowerShell的注意事项"><a href="#小贴士：关于PowerShell的注意事项" class="headerlink" title="小贴士：关于PowerShell的注意事项"></a>小贴士：关于PowerShell的注意事项</h1><p>powershell要使用英文半角输入<br>powershell仅支持Windows10&#x2F;11<br>此外，<code>PS C:\Users\dszy&gt;</code>的<code>dszy</code>指的是你的电脑用户名，每个人的都不一样，这倒不用去太麻烦，知道就行了，也没有必要<del>抄袭我的</del>用户名和我的一样<br>大家还可以右击”开始按钮“来启动powershell，注意，不是那个加了管理员的！！！！！我们不需要用到管理员模式的powershell！！！</p><h1 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h1><p>好了，我是端水自由，如果您有什么想要补充的，欢迎您在评论区留言，我们下期再见~</p><blockquote><p>下期预告：Python【02.2】—编程前的准备（macOS X篇）</p></blockquote>]]></content>
+      
+      
+      <categories>
+          
+          <category> 三步学习Python编程 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> python </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>同学对话【01】</title>
+      <link href="/2022/04/15/classmate01/"/>
+      <url>/2022/04/15/classmate01/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>端水自由:<br>整网站呢</p><p>GAGA:<br>要多少字</p><p>端水自由:<br>emm</p><p>端水自由:<br>你看着办</p><p>端水自由:<br>100能写吧</p><p>GAGA:<br>……</p><p>端水自由:<br>100起步</p><p>GAGA:<br>100行</p><p>端水自由:<br>50也行（但有点短，效果不好）</p><p>端水自由:<br>100.。。。。。也不咋地</p><p>端水自由:<br><a href="http://dszyblog.gitee.io/">http://dszyblog.gitee.io/</a></p><p>端水自由:<br>你看着办</p><p>端水自由:<br>好了没。。。。。。</p><p>GAGA:<br>写不出来呀啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊</p><p>GAGA:<br>要不你写</p><p>端水自由:<br>emm</p><p>端水自由:<br>跟我有什么关系</p><p>端水自由:<br>你随便写几个字都行</p><p>GAGA:<br>我总不能写有一天你建了个群，然后呢，我旁边有只喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵，然后又有只狗在那里汪汪汪汪汪汪汪汪</p><p>端水自由:<br>或者是你想说什么</p><p>端水自由:<br>你这一天干了什么</p><p>端水自由:<br>你今天发生的事</p><p>端水自由:<br>都可以</p><p>GAGA:<br>我这几天吃饭睡觉玩，上课没了</p><p>端水自由:<br>那就写呗</p><p>GAGA:<br>上面那句话发上去就行了</p><div class="note success flat"><p>PS：发文已经过同学GAGA本人同意~（不然谁敢发【手动狗头】）</p></div>]]></content>
+      
+      
+      <categories>
+          
+          <category> 同学们的搞笑事 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 同学对话 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>无线 Wi-Fi 进化史：全新 Wi-Fi 7 速度达每秒 30Gbps</title>
+      <link href="/2022/04/14/wifi-7/"/>
+      <url>/2022/04/14/wifi-7/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>Wi-Fi 网络，是我们日常生活 &#x2F; 工作不可或缺的 “必需品” 之一。很多人每到一个地方，第一件事就是寻找免费 Wi-Fi，哪怕只是吃个饭的功夫，也要向店家询问 Wi-Fi 密码。在移动互联网经济飞速发展的背景下，我们的生活早已和网络息息相关。<br>Wi-Fi 是英文 Wireless Fidelity 的缩写，诞生于上世纪 90 年代，由约翰・沙丽文博士发明 (实际是约翰・沙丽文博士领导的一群由悉尼大学工程系毕业生组成的研究小组)。1996 年，澳洲政府研究机构 CSIRO 在美国成功申请了无线网技术专利。</p><p>CES2022 前夕，联发科预告将会在 CES2022 上演示下一代 Wi-Fi 网络技术 ——Wi-Fi 7。联发科表示，Wi-Fi 7 的速度是 Wi-Fi 6E 的 2.4 倍，带来更快速度的同时，还会有更低的延时，抗干扰能力也会加强。</p><p>消息一出，不禁让人再次感慨，在企业端 Wi-Fi 6 与消费端 Wi-Fi 5 尚未普及的时代，Wi-Fi 7 又要来了。(此前英特尔已透露了有关 Wi-Fi 7 的一些事宜)　　虽然 Wi-Fi 这个词，一直没有改变，但它背后所代表的技术，却一直在不断进化。下面，我们简单聊聊 Wi-Fi 的进化史。</p><hr><h1 id="Wi-Fi-进化史"><a href="#Wi-Fi-进化史" class="headerlink" title="Wi-Fi 进化史"></a>Wi-Fi 进化史</h1><p>1971 年，ALOHA 网络，是世界上第一个无线网络 (无线资料网络)，制定的 ALOHA 协议，是 IEEE 802.11 协议的先驱;<br>1985 年，美国联邦通信委员会 FCC 公布 2.4GHz 网络频段;<br>1996 年，澳洲政府研究机构 CSIRO 申请 Wi-Fi 专利;<br>1997 年，电气和电子工程师协会 IEEE，推出第一代 WLAN 协议 ，即 IEEE 802.11，规定无线局域网运行在 2.4GHz，最大速率 2Mbps;<br>1999 年，IEEE 推出 5GHz 的 802.11a，最大速率 54Mbps;随后，IEEE 推出 2.4GHz 的 802.11b，最大速率 11Mbps;同年，Wi-Fi 联盟成立，并用 Wi-Fi 这个词替代 802.11b，前者更商业化;<br>2003 年，IEEE 制定第三代 Wi-Fi 标准 ，即 802.11g，它融合了 802.11b 和 802.11a，并增加了兼容性;<br>图片<br>2009 年，IEEE 制定 802.11n 标准，即 Wi-Fi 4 ，引入了 MIMO 技术，最大传输速度理论值为 600Mbps，与先前的 54Mbps 相比有大幅提升，传输距离也会增加;<br>2013 年，Wi-Fi 5 发布，即 802.11ac，采用 5GHz 频段，单天线最大速率为 867Mbps，理论最大值 6.9Gbps;<br>2019 年，Wi-Fi 6 标准制定，即 802.11ax，采用 2.4GHz 与 5GHz 频段，最大单流达 1201Mbps，最大速率达 9.6Gbps;<br>2020 年，Wi-Fi 6E 推出，增加了 6GHz 频段，是 Wi-Fi 6 的升级版，让路由器从 2.4GHz 和 5GHz 之外，又把一个新的频段纳入使用标准;</p><p>2021 年，Wi-Fi 7 1.0 标准推出，也就是 802.11be。Wi-Fi 7 可提供 30Gbps 以上的无线连接速率，是 Wi-Fi 6 的约 3.6 倍，频宽从 160MHz 提升到 320MHz，引入最新开放的 6GHz 频段支持 (可在 5.925GHz~7.125GHz 范围内最高支持 3 个不重叠的 320MHz 频道)，并向下兼容 2.4GHz 和 5GHz。MIMO (多用户输入输出) 设计从最高 8 条空间流翻番到 16 条。<br>不过，Wi-Fi 7 正式版本并未公开，Wi-Fi 联盟预计 2023 年 11 月到 2024 年 5 月之间定稿，彼时相关的商品才会正式面世。</p><h1 id="总结："><a href="#总结：" class="headerlink" title="总结："></a>总结：</h1><p>Wi-Fi 技术不断在迭代升级，新的版本不断被推出，但大家不必担心兼容性，一般最新的 Wi-Fi 标准都是向下兼容的，常规设备都可正常使用。另外，在使用免费 Wi-Fi 时，请一定要谨慎，尽量避免在公共 Wi-Fi 下进行网络购物或网银操作;同时，定期修改家中无线密码，并提升密码难度;如可以，保证每台上网设备都安装安全防护软件，尤其是 PC 设备。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Wifi </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 转载 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Python【01】---基础知识</title>
+      <link href="/2022/04/13/python01/"/>
+      <url>/2022/04/13/python01/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>emm……本身想着要更新ABP的，但是想着想着，咱们还是更新python教程吧。。。。。。</p><hr><h1 id="1-1-Python理解"><a href="#1-1-Python理解" class="headerlink" title="1.1 Python理解"></a>1.1 Python理解</h1><p>这是小白的Python新手教程，具有如下特点：</p><p><strong>中文，免费，零起点，完整示例，基于最新的Python 3版本。</strong></p><p>Python是一种计算机程序设计语言。你可能已经听说过很多种流行的编程语言，比如非常难学的C语言，非常流行的Java语言，适合初学者的Basic语言，适合网页编程的JavaScript语言等等。</p><p>那Python是一种什么语言？</p><p>emm……解释性高级语言。</p><p>与C语言不同，C语言需要编译后才能运行，而python不用，因为它会自动编译。。。。。</p><div class="note default flat"><p>python：这会没人说我没用了吧</p></div><p>首先，我们普及一下编程语言的基础知识。用任何编程语言来开发程序，都是为了让计算机干活，比如下载一个MP3，编写一个文档等等，而计算机干活的CPU只认识机器指令，所以，尽管不同的编程语言差异极大，最后都得“翻译”成CPU可以执行的机器指令。而不同的编程语言，干同一个活，编写的代码量，差距也很大。</p><p>比如，完成同一个任务，C语言要写1000行代码，Java只需要写100行，而Python可能只要20行。</p><p>所以Python是一种相当高级的语言。</p><p>你也许会问，代码少还不好？代码少的代价是运行速度慢，C程序运行1秒钟，Java程序可能需要2秒，而Python程序可能就需要10秒！</p><div class="note default flat"><p>C：嗨还害！python也不过如此！！！</p></div><blockquote><p>那是不是越低级的程序越难学，越高级的程序越简单？表面上来说，是的，但是，在非常高的抽象计算中，高级的Python程序设计也是非常难学的，所以，高级程序语言不等于简单。<br>但是，对于初学者和完成普通任务，Python语言是非常简单易用的。连Google都在大规模使用Python，你就不用担心学了会没用。<br>用Python可以做什么？可以做日常任务，比如自动备份你的MP3；可以做网站，很多著名的网站包括YouTube就是Python写的；可以做网络游戏的后台，很多在线游戏的后台都是Python开发的。总之就是能干很多很多事啦。<br>Python当然也有不能干的事情，比如写操作系统，这个只能用C语言写；写手机应用，只能用Swift&#x2F;Objective-C（针对iPhone）和Java（针对Android）；写3D游戏，最好用C或C++。<br>—–廖雪峰的官方网站（<a href="https://liaoxuefeng.com)/">https://liaoxuefeng.com）</a></p></blockquote><p>如果你是小白用户，满足以下条件：</p><ul><li>会使用电脑，但从来没写过程序；</li><li>还记得Windows的基础知识；</li><li><del>想从编程小白变成专业的软件架构师；</del></li><li><del>每天能抽出半个小时学习。</del></li></ul><h1 id="1-2-Python简介"><a href="#1-2-Python简介" class="headerlink" title="1.2 Python简介"></a>1.2 Python简介</h1><p>Python是著名的“龟叔”Guido van Rossum在1989年圣诞节期间，为了打发无聊的圣诞节而编写的一个编程语言。</p><p>现在，全世界差不多有600多种编程语言，但流行的编程语言也就那么20来种。如果你听说过TIOBE排行榜，你就能知道编程语言的大致流行程度。这是最近10年最常用的10种编程语言的变化图：<br><img src="https://s1.ax1x.com/2022/04/16/LJyvse.png" alt="Java和C不相上下呀！！！Python好像有点落后"></p><p>当你用一种语言开始作真正的软件开发时，你除了编写代码外，还需要很多基本的已经写好的现成的东西，来帮助你加快开发进度。比如说，要编写一个电子邮件客户端，如果先从最底层开始编写网络协议相关的代码，那估计一年半载也开发不出来。高级编程语言通常都会提供一个比较完善的基础代码库，让你能直接调用，比如，针对电子邮件协议的SMTP库，针对桌面环境的GUI库，在这些已有的代码库的基础上开发，一个电子邮件客户端几天就能开发出来。</p><p>Python就为我们提供了非常完善的基础代码库，覆盖了网络、文件、GUI、数据库、文本等大量内容，被形象地称作“内置电池（batteries included）”。用Python开发，许多功能不必从零编写，直接使用现成的即可。</p><p>除了内置的库外，Python还有大量的第三方库，也就是别人开发的，供你直接使用的东西。当然，如果你开发的代码通过很好的封装，也可以作为第三方库给别人使用。</p><p>许多大型网站就是用Python开发的，例如YouTube、Instagram，还有国内的豆瓣。很多大公司，包括Google、Yahoo等，甚至NASA（美国航空航天局）都大量地使用Python。</p><p>龟叔给Python的定位是“优雅”、“明确”、“简单”，所以Python程序看上去总是简单易懂，初学者学Python，不但入门容易，而且将来深入下去，可以编写那些非常非常复杂的程序。</p><p>总的来说，Python的哲学就是简单优雅，尽量写容易看明白的代码，尽量写少的代码。如果一个资深程序员向你炫耀他写的晦涩难懂、动不动就几万行的代码，你可以尽情地嘲笑他。</p><p>那Python适合开发哪些类型的应用呢？</p><p><strong>首选是网络应用，包括网站、后台服务等等；</strong></p><p>其次是许多日常需要的<strong>小工具</strong>，包括系统管理员需要的<strong>脚本任务</strong>等等；</p><p>另外就是把其他语言开发的程序再包装起来，方便使用。</p><p>最后说说Python的缺点。</p><blockquote><p>任何编程语言都有缺点，Python也不例外。优点说过了，那Python有哪些缺点呢？<br>第一个缺点就是运行速度慢，和C程序相比非常慢，因为Python是解释型语言，你的代码在执行时会一行一行地翻译成CPU能理解的机器码，这个翻译过程非常耗时，所以很慢。而C程序是运行前直接编译成CPU能执行的机器码，所以非常快。<br>但是大量的应用程序不需要这么快的运行速度，因为用户根本感觉不出来。例如开发一个下载MP3的网络应用程序，C程序的运行时间需要0.001秒，而Python程序的运行时间需要0.1秒，慢了100倍，但由于网络更慢，需要等待1秒，你想，用户能感觉到1.001秒和1.1秒的区别吗？这就好比F1赛车和普通的出租车在北京三环路上行驶的道理一样，虽然F1赛车理论时速高达400公里，但由于三环路堵车的时速只有20公里，因此，作为乘客，你感觉的时速永远是20公里。<br>—–廖雪峰</p></blockquote><div class="note default flat"><p>python：emm。。。。。。不要在意那些细节，我简单呀。。。。。。</p></div><p>第二个缺点就是代码不能加密。如果要发布你的Python程序，实际上就是发布源代码，这一点跟C语言不同，C语言不用发布源代码，只需要把编译后的机器码（也就是你在Windows上常见的xxx.exe文件）发布出去。要从机器码反推出C代码是不可能的，所以，凡是编译型的语言，都没有这个问题，而解释型的语言，则必须把源码发布出去。</p><p>这个缺点仅限于你要编写的软件需要卖给别人挣钱的时候。好消息是目前的互联网时代，靠卖软件授权的商业模式越来越少了，靠网站和移动应用卖服务的模式越来越多了，后一种模式不需要把源码给别人。</p><p>再说了，现在如火如荼的开源运动和互联网自由开放的精神是一致的，互联网上有无数非常优秀的像Linux一样的开源代码，我们千万不要高估自己写的代码真的有非常大的“商业价值”。那些大公司的代码不愿意开放的更重要的原因是代码写得太烂了，一旦开源，就没人敢用他们的产品了。</p><div class="note default flat"><p>python：大家都这么忙，怎么可能会来破解代码呢？？？</p></div><h1 id="本期总结"><a href="#本期总结" class="headerlink" title="本期总结"></a>本期总结</h1><p>好了，以上就是python01的全部内容了，非常感谢，您能看到这里，人生苦短，我用python！！！<br>如果您觉得这篇文章还不错的话，可以点击打赏按钮给我打赏哦！你的打赏，是我写文章的最大动力！如果您有什么想补充的，欢迎在评论区留言~</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 三步学习Python编程 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> python </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>这4个神仙浏览器插件，功能简直离谱的好用！【01篇】</title>
+      <link href="/2022/04/12/edge-good-ex01/"/>
+      <url>/2022/04/12/edge-good-ex01/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>Hello!大家好，我是<strong>端水自由</strong>。相信大家对浏览器都不陌生吧，那么今天，我将会给大家带来4款超好用的浏览器插件，希望大家喜欢，谢谢啦！！！</p><hr><div class="note info flat"><p>注意了，浏览器仅支持<br>Chrome浏览器<br>Edge浏览器<br>火狐浏览器<br>360极速浏览器<br>360安全浏览器<br>QQ浏览器<br>搜狗浏览器<br>傲游浏览器<br>Opera浏览器<br>猎豹浏览器<br>安装方法请参考<a href="https://www.baiduyun.wiki/zh-cn/crx.html">如何离线安装浏览器扩展（油小猴）</a></p></div><div class="note warning flat"><p>本期测试浏览器为：新版Microsoft Edge（版本号：100）</p></div><hr><h1 id="1-极速二维码"><a href="#1-极速二维码" class="headerlink" title="1.极速二维码"></a>1.极速二维码</h1><p>嗨还害，大家有没有和端水自由一样的困扰：电脑上打开了一个网页，想在平板上打开（作者没手机），但是又发现网址太长，或者是中文目录被解码了，那就更长了，这个时候，我们就何以生成一个二维码，这个功能许多浏览器是自带的，以Edge浏览器为例：<br><img src="https://s2.loli.net/2022/04/12/Obn5FUoYlL7Ix68.gif" alt="Edge生成页面二维码方法"><br>或者说我们自己用代码写个制作二维码的程序（作者做过，还成功了！）<br>那么这可能还仅仅不够，如果我们要扫码应该怎么办呢（而且还是电脑），我们可以：</p><ol><li>用某信、某Q等软件，发送到一个人那里，点开，右击识别</li><li><del>自己写个代码识别（有点难度）</del>【当我没说】</li><li>用扩展插件！<br>没错，那么我们今天要用的就是【极速二维码】这个插件</li></ol><div class="note danger flat"><p>PS：作者觉得这样花言巧语的写没什么用，你们估计也不爱看，那我以后就简单一点，讲太多大家也会晕，以下的内容，我会讲的很简单，以后也是！</p></div><h2 id="功能一：生成页面二维码"><a href="#功能一：生成页面二维码" class="headerlink" title="功能一：生成页面二维码"></a>功能一：生成页面二维码</h2><p>直接点击就行了，就是这么的随意！<br><img src="https://s2.loli.net/2022/04/12/iXqBKuHeQPW4jZc.png" alt="点击打开就是啦~"></p><h2 id="功能二：上传二维码图片-解码"><a href="#功能二：上传二维码图片-解码" class="headerlink" title="功能二：上传二维码图片+解码"></a>功能二：上传二维码图片+解码</h2><p><img src="https://s2.loli.net/2022/04/13/oDj6rAaUdGkn3pM.png" alt="说了不写多，就不写多"><br>点击”极速二维码这个插件“，然后点击二维码上的”小二维码“就好啦</p><h1 id="下载方法"><a href="#下载方法" class="headerlink" title="下载方法"></a>下载方法</h1><h2 id="01-官方扩展商店"><a href="#01-官方扩展商店" class="headerlink" title="01.官方扩展商店"></a>01.官方扩展商店</h2><p>由于一些懂得都懂的原因，谷歌浏览器的扩展商店是无法访问的，不过我听说谷歌可以用Edge的扩展商店。。。。。。</p><div class="note success flat"><p>如果你现在用的还是谷歌浏览器（Google Chrome）或者是火狐浏览器（Firefox）或者是其它浏览器，我都墙裂建议你更换到新版Edge（Microsoft Edge）浏览器上，原因自行Bing<br><a href="https://www.microsoft.com/zh-cn/edge?r=1#evergreen">点击这里下载新版Edge浏览器</a><br>支持：Windows,macOS,Linux,Android,IOS等 </p></div><h2 id="Edge扩展商店"><a href="#Edge扩展商店" class="headerlink" title="Edge扩展商店"></a>Edge扩展商店</h2><figure class="highlight https"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">https://microsoftedge.microsoft.com/addons/Microsoft-Edge-Extensions-Home</span><br></pre></td></tr></table></figure><h2 id="Chrome扩展商店（需翻墙）"><a href="#Chrome扩展商店（需翻墙）" class="headerlink" title="Chrome扩展商店（需翻墙）"></a>Chrome扩展商店（需翻墙）</h2><figure class="highlight https"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">https://chrome.google.com/webstore?hl=zh-CN</span><br></pre></td></tr></table></figure><h2 id="Firefox扩展商店（部分广告拦截插件在中国不可使用）"><a href="#Firefox扩展商店（部分广告拦截插件在中国不可使用）" class="headerlink" title="Firefox扩展商店（部分广告拦截插件在中国不可使用）"></a>Firefox扩展商店（部分广告拦截插件在中国不可使用）</h2><figure class="highlight https"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">https://addons.mozilla.org/zh-CN/firefox/</span><br></pre></td></tr></table></figure><p>那么接下来再推荐几个第三方的，下载的都是离线插件（.crx,.xpi,.zip之类的）</p><h2 id="Crx搜搜（极力推荐！！！）"><a href="#Crx搜搜（极力推荐！！！）" class="headerlink" title="Crx搜搜（极力推荐！！！）"></a>Crx搜搜（极力推荐！！！）</h2><figure class="highlight https"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">https://www.crxsoso.com/</span><br></pre></td></tr></table></figure><p>内嵌了3种浏览器的扩展商店，<del>这下再也没有人阻止我用谷歌了</del>这下终于能用上中国人的东西了</p><h2 id="极简插件"><a href="#极简插件" class="headerlink" title="极简插件"></a>极简插件</h2><figure class="highlight https"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">https://chrome.zzzmh.cn/#/index</span><br></pre></td></tr></table></figure><h2 id="Crx4（有广告，不太推荐，建议安装ABP后在使用）"><a href="#Crx4（有广告，不太推荐，建议安装ABP后在使用）" class="headerlink" title="Crx4（有广告，不太推荐，建议安装ABP后在使用）"></a>Crx4（有广告，不太推荐，建议安装ABP后在使用）</h2><figure class="highlight https"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">https://www.crx4.com/</span><br></pre></td></tr></table></figure><h1 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h1><p>不知道您对这一期的意见怎么样，欢迎您在评论区留言，下期预告：Python教程【01】如果您想看别的内容，也请留言，好了各位读者，我们下期再见~</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 软件 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 浏览器扩展插件 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>关于网站收录与你在Bing上能搜到我的旧网站文章的说明</title>
+      <link href="/2022/04/11/my-old-post-on-bing/"/>
+      <url>/2022/04/11/my-old-post-on-bing/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="说明"><a href="#说明" class="headerlink" title="说明"></a>说明</h1><p>这边我要说明一下哈，就是这个bing（必应）现在收录了我的网站（国际版和国内版都是），但是你现在可能会搜索到我的旧网站里的文章，而且界面也是旧网站的，目前无解。所以你们看看就好了，“写留言”写不了的，会404.<br>让后呢，我会用GitHub登录评论系统，名字是“dszyblog”，请认准我，别被带偏了！！！</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 说明文档 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 说明 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>终于好了</title>
+      <link href="/2022/04/11/that-s-ok/"/>
+      <url>/2022/04/11/that-s-ok/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>搞了好久，可算是把网站、框架、评论、图片搞好了<br>好累呀，去看<a href="https://dszyblog.gitee.io/about/">关于</a>。啥都不想说了~</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 闲谈 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 杂七杂八 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+  
+  
+</search>
