@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>我回来啦</title>
+      <link href="/2022/06/04/i-come-back/"/>
+      <url>/2022/06/04/i-come-back/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>同志们，哈哈哈，我回来啦！！！<br>最近比较忙，我都没时间更新网站，乍一看，butterfly都已经出了4.2.2版本了，Twikoo也要更新到1.5.11了，还有，jsd的CDN崩了，只能换成本地Local的CDN了。大家可以点击右上角的<a href="https://dszyblog.gitee.io/up-log/">更新日志</a>来查看我今天更新了什么。<br>给你们康康Jerry（butterfly作者）给我的回话：</p><p>端水自由 16:05:42<br>大佬在吗</p><p>端水自由 16:05:55<br>网站图标没了怎么办</p><p>端水自由 16:06:08<br>刷新了也没用</p><p>Jerry 16:08:57<br>换其他cdn 吧</p><p>端水自由 16:09:32<br>cdn是什么</p><p>端水自由 16:09:36<br>我不知道</p><p>Jerry<br>看来得把butterfly的默认CDN改改了</p><p>端水自由<br>怎么改</p><p>（剩余内容出于隐私问题，就不写了）</p><hr><p>最后：感谢Jerry！</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 说明文档 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 说明 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>做14年前最先进的系统，挨全世界最狠的骂</title>
       <link href="/2022/05/04/windows-vista/"/>
       <url>/2022/05/04/windows-vista/</url>
