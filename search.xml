@@ -4,7 +4,32 @@
   
     
     <entry>
-      <title>虚拟机安装Ubuntu教程</title>
+      <title>Chrome懒人专用版v1.0发布</title>
+      <link href="/2022/07/08/chrome-dszy/"/>
+      <url>/2022/07/08/chrome-dszy/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>Hi！大家好，我是你们“亲爱”的<strong>端水自由</strong>。时隔一月，我们终于又一次相见了。因为【期末考试】的原因，导致我停更了一段时间，不过现在，我回来了，而且为大家带来了Chrome懒人专用版的1.0版本！（其实就是把<a href="https://www.centbrowser.cn/">Cent Browser</a>给“魔改”了一下，还是要感谢Cent Browser的作者）OK，废话不多说，让我们开始吧！😊</p><hr><h1 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h1><p>Chrome懒人专用版的安装方式极其简单，因为是绿化版，无需安装，直接使用。整体大小为217.6MB，我把它保存在了FlowUS里面。<br>下载链接：<a href="https://flowus.cn/dszy/share/6fdcfc72-acbc-459a-a29a-4bd137d7ce97">https://flowus.cn/dszy/share/6fdcfc72-acbc-459a-a29a-4bd137d7ce97</a></p><h1 id="使用"><a href="#使用" class="headerlink" title="使用"></a>使用</h1><p>Chrome懒人专用版的使用方式和普通的浏览器是一样的，而且还可以导入书签</p><h1 id="小惊喜"><a href="#小惊喜" class="headerlink" title="小惊喜"></a>小惊喜</h1><h2 id="扩展插件"><a href="#扩展插件" class="headerlink" title="扩展插件"></a>扩展插件</h2><p>Chrome懒人专用版自带了许多扩展可以使用。后续可以在<a href="https://crxsoso.com/">Crx搜搜</a>继续添加<br><img src="https://dszyblog-pic.vercel.app/%E5%B7%B2%E6%9C%89%E6%89%A9%E5%B1%95.png"></p><h2 id="油猴脚本"><a href="#油猴脚本" class="headerlink" title="油猴脚本"></a>油猴脚本</h2><p>Chrome懒人专用版自带Tampermonkey油猴脚本管理器，并且添加了许多好用的脚本。后续可以在<a href="https://greasyfork.org/zh-CN">Greasyfork</a>继续添加<br><img src="https://dszyblog-pic.vercel.app/%E5%B7%B2%E6%9C%89%E8%84%9A%E6%9C%AC.png"></p><h2 id="新标签页"><a href="#新标签页" class="headerlink" title="新标签页"></a>新标签页</h2><p>Chrome懒人专用版使用的是<a href="https://xiaoshu.app/">小舒同学</a>，扩展里还有<a href="https://www.infinitytab.com/zh/">infinity新标签页</a>，开启其中一个就可以啦！<br><img src="https://dszyblog-pic.vercel.app/%E5%B0%8F%E8%88%92%E5%90%8C%E5%AD%A6%E6%96%B0%E6%A0%87%E7%AD%BE%E9%A1%B5.png"></p><h1 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h1><p>最后呢，如果有什么疑问，欢迎大家关注公众号：端水自由在线留言向我提问哦！好了，我是端水自由，我们下期再见。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Chrome懒人专用版更新日志 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 浏览器 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>虚拟机安装Ubuntu教程【01】</title>
       <link href="/2022/06/11/vmware-ubuntu/"/>
       <url>/2022/06/11/vmware-ubuntu/</url>
       
@@ -13,7 +38,7 @@
       
       <categories>
           
-          <category> 教程 </category>
+          <category> 虚拟机安装Ubuntu教程 </category>
           
       </categories>
       
