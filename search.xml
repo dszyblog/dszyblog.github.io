@@ -76,5 +76,38 @@
     </entry>
     
     
+    
+    <entry>
+      <title>音乐</title>
+      <link href="/music/index.html"/>
+      <url>/music/index.html</url>
+      
+        <content type="html"><![CDATA[<p>有时间会更新的，现在还没有。。。。。。</p>]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>图片</title>
+      <link href="/picture/index.html"/>
+      <url>/picture/index.html</url>
+      
+        <content type="html"><![CDATA[<p>有时间会更新的，现在还没有。。。。。。</p>]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>视频</title>
+      <link href="/video/index.html"/>
+      <url>/video/index.html</url>
+      
+        <content type="html"><![CDATA[<p>有时间会更新的，现在还没有。。。。。。</p>]]></content>
+      
+    </entry>
+    
+    
   
 </search>
