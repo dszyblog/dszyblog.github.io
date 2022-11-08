@@ -4,7 +4,36 @@
   
     
     <entry>
-      <title>跟大家说几句</title>
+      <title>Github访问加速教程（一）</title>
+      <link href="/2022/11/08/open-github1/"/>
+      <url>/2022/11/08/open-github1/</url>
+      
+        <content type="html"><![CDATA[<p>最近老是有小伙伴说 Github 打不开，那么今天就给大家讲一讲如何加速访问Github，如果你觉得这篇文章还不错的话，请别忘了评论转发收藏+打赏哦！那么废话不多说，我们直接进入主题。</p><hr><h1 id="Github-是什么？"><a href="#Github-是什么？" class="headerlink" title="Github 是什么？"></a>Github 是什么？</h1><blockquote><p>GitHub 是一个面向开源及私有软件项目的托管平台，因为只支持 Git 作为唯一的版本库格式进行托管，故名 GitHub 。<strong>2022年4月13日起，GitHub 开始封锁受美国制裁公司的俄罗斯开发者账户。</strong><br>——来自<a href="https://baike.baidu.com/item/github/10145341">《百度百科》</a></p></blockquote><p>首先你需要知道<a href="https://github.com/">Github 的官网链接</a>，<br>其次虽然确实和毛子打起来了，但不得不承认他确实非常的好。你可以拿他分享源代码，分享你自己的软件，用它搭建图床，甚至使用它建网站都没有问题！但是，他的访问速度实在是太慢了，一直以来，因为种种原因，Github一直处于一个“半墙”的状态，很多大佬在上面发布的作品以及源代码，我们中国人难道就不能访问了吗？哼！今天我一篇文章教会你，Let’s go！</p><h1 id="方法一：修改本地-Host"><a href="#方法一：修改本地-Host" class="headerlink" title="方法一：修改本地 Host"></a>方法一：修改本地 Host</h1><h2 id="Host-和-DNS-的亲密关系"><a href="#Host-和-DNS-的亲密关系" class="headerlink" title="Host 和 DNS 的亲密关系"></a>Host 和 DNS 的亲密关系</h2><p>在告诉你如何修改 Host 之前，我们需要先去了解，一个域名（也就是“网址”）都会对应一个IP地址，用 Ping 我们就可以知道，一个域名的 IP 地址是什么。IP地址通常是由“数字”和“小数点组成”，例如百度的官网【baidu.com】的 IP 地址，就是【110.242.68.66】</p><div class="note info flat"><p>当然，百度不止这一个服务器 IP 地址，你离哪一个服务器近，你就会访问哪一个</p></div><p>80 后应该都知道原来有个叫黄页的东西，即公共电话簿（虽然我没有见过，但我听我老师讲过）<br>而 DNS 就是互联网时代的黄页，帮你在访问域名的时候查到实际的 IP 地址<br>大概理解了 DNS 的作用，就再回过头来说下 Github 的问题</p><p>Github 在全球各地都有服务器，而在国内，emm……并没有，所以默认解析的就是漂亮国的服务器。访问速度慢……懂的都懂，不懂的就别懂了【doge】</p><p>但我们可以通过修改本地 hosts 文件来绕过公共DNS解析，直接访问 Github 在泡菜国、岛国等的服务器，从而达到加速访问的目的（但也不是太快，起码比绕半个地球的漂亮国快）</p><p><img src="https://dszyblog.gitee.io/img/post-img/github%E8%AE%BF%E9%97%AE%E5%BF%AB%E9%80%9F%E7%9A%84%E5%8E%9F%E7%90%86.png]" alt="Github访问快速的原理图【来源于阿虚同学】"></p><p>这里提到的 hosts 文件就相当于本地通讯录，你的通讯录里面记录了 baidu.com 的 IP ，自然就没必要去翻黄页（代指 DNS ）了</p><h2 id="UsbEAm-Hosts-Editor"><a href="#UsbEAm-Hosts-Editor" class="headerlink" title="UsbEAm Hosts Editor"></a>UsbEAm Hosts Editor</h2><p>UsbEAm Hosts Editor 是<a href="https://www.dogfight360.com/blog/">羽翼城</a>大佬的作品<br>这个软件的下载可以直接到羽翼城大佬的博客里去下载（<a href="https://www.dogfight360.com/blog/475/%EF%BC%89">https://www.dogfight360.com/blog/475/）</a><br>下载完成之后，记得使用管理员身份运行，不然无法修改 Host</p><p><img src="https://dszyblog.gitee.io/img/post-img/UHE0.png" alt="右键选择以管理员身份运行"></p><p>启动之后，点击软件左下角的游戏机图标，选择准备修改 Host 的网站</p><p><img src="https://dszyblog.gitee.io/img/post-img/UHE0.png"></p><p>检测延迟 → 选择延迟最低的 IP 地址（一般来说，在软件没有出现 bug 的情况下，最上面的那个就是延迟最低的） → 应用选中</p><p><img src="https://dszyblog.gitee.io/img/post-img/UHE2.png"></p><p><img src="https://dszyblog.gitee.io/img/post-img/UHE3.png"></p><p>建议把这一些也给加速了，这样下载以及静态资源什么的就一次性搞定了</p><p><img src="https://dszyblog.gitee.io/img/post-img/UHE4.png"></p><h1 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h1><p>以上就是Github访问加速教程（一）的全部内容啦！非常感谢你能够看到这里，如果你觉得本期文章写的还不错的话，就请评论转发收藏+打赏，你的支持，永远是我写文章的最大动力，那么我是端水自由，想看下期教程，那就敬请期待吧！拜拜！！！</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Github访问加速教程 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Github </tag>
+            
+            <tag> 访问 </tag>
+            
+            <tag> 电脑技术 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>给大家一个解释</title>
       <link href="/2022/11/07/say-some/"/>
       <url>/2022/11/07/say-some/</url>
       
