@@ -214,17 +214,6 @@
     
     
     <entry>
-      <title>评论面板</title>
-      <link href="/message-board/index.html"/>
-      <url>/message-board/index.html</url>
-      
-        <content type="html"><![CDATA[<p>评论面板就是评论面板，看着我干嘛。。。。。。</p>]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>标签</title>
       <link href="/tags/index.html"/>
       <url>/tags/index.html</url>
